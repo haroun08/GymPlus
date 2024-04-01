@@ -1,0 +1,30 @@
+{
+  "gymPlusApp": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Product erstellen",
+        "createOrEditLabel": "Product erstellen oder bearbeiten",
+        "notFound": "Keine Products gefunden"
+      },
+      "created": "Product erstellt mit ID {{ param }}",
+      "updated": "Product aktualisiert mit ID {{ param }}",
+      "deleted": "Product gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Product {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "availableStockQuantity": "Available Stock Quantity",
+      "id": "Id",
+      "orderUnit": "Order Unit",
+      "category": "Category"
+    }
+  }
+}

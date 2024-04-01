@@ -1,0 +1,53 @@
+{
+  "annotations": {
+    "changelogDate": "20240330172349"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "paymentStatus",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "PeriodicSubscription",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "relationshipName": "id",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityName": "plan",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "plans",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "invoice",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "invoices",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

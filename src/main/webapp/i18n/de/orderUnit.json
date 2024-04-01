@@ -1,0 +1,27 @@
+{
+  "gymPlusApp": {
+    "orderUnit": {
+      "home": {
+        "title": "Order Units",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Order Unit erstellen",
+        "createOrEditLabel": "Order Unit erstellen oder bearbeiten",
+        "notFound": "Keine Order Units gefunden"
+      },
+      "created": "Order Unit erstellt mit ID {{ param }}",
+      "updated": "Order Unit aktualisiert mit ID {{ param }}",
+      "deleted": "Order Unit gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Order Unit {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Order Unit"
+      },
+      "id": "Id",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price",
+      "orderUnits": "Order Units",
+      "products": "Products"
+    }
+  }
+}

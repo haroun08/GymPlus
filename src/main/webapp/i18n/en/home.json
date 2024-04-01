@@ -1,0 +1,19 @@
+{
+  "home": {
+    "title": "Welcome, GymPlus",
+    "subtitle": "GymPlus web application",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    },
+    "question": "Contact us on:",
+    "link": {
+      "homepage": "GymPlus homepage",
+      "stackoverflow": "stack Over Flow",
+      "bugtracker": "GymPlus bug tracker",
+      "chat": "GymPlus public chat room",
+      "follow": "Twitter"
+    },
+    "like": "If you like GymPus, don't forget to give us a star on",
+    "github": "GitHub"
+  }
+}

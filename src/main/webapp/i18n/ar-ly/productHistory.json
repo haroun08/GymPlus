@@ -1,0 +1,30 @@
+{
+  "gymPlusApp": {
+    "productHistory": {
+      "home": {
+        "title": "Product Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Product History",
+        "createOrEditLabel": "Create or edit a Product History",
+        "notFound": "No Product Histories found"
+      },
+      "created": "A new Product History is created with identifier {{ param }}",
+      "updated": "A Product History is updated with identifier {{ param }}",
+      "deleted": "A Product History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Product History {{ id }}?"
+      },
+      "detail": {
+        "title": "Product History"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "price": "Price",
+      "availableStockQuantity": "Available Stock Quantity",
+      "validFrom": "Valid From",
+      "validTo": "Valid To",
+      "product": "Product"
+    }
+  }
+}

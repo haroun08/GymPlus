@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20240330172348"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "monthOccurrence",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dayOccurrence",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Period",
+  "relationships": [
+    {
+      "otherEntityName": "plan",
+      "otherEntityRelationshipName": "periods",
+      "relationshipName": "id",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

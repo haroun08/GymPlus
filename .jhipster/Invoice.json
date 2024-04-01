@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240330172344"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "invoiceDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "payAmount",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Invoice",
+  "relationships": [
+    {
+      "otherEntityName": "periodicSubscription",
+      "otherEntityRelationshipName": "invoices",
+      "relationshipName": "id",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "payment",
+      "relationshipName": "payment",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

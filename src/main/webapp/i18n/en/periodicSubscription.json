@@ -1,0 +1,30 @@
+{
+  "gymPlusApp": {
+    "periodicSubscription": {
+      "home": {
+        "title": "Periodic Subscriptions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Periodic Subscription",
+        "createOrEditLabel": "Create or edit a Periodic Subscription",
+        "notFound": "No Periodic Subscriptions found"
+      },
+      "created": "A new Periodic Subscription is created with identifier {{ param }}",
+      "updated": "A Periodic Subscription is updated with identifier {{ param }}",
+      "deleted": "A Periodic Subscription is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Periodic Subscription {{ id }}?"
+      },
+      "detail": {
+        "title": "Periodic Subscription"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "status": "Status",
+      "paymentStatus": "Payment Status",
+      "id": "Id",
+      "plans": "Plans",
+      "invoices": "Invoices"
+    }
+  }
+}

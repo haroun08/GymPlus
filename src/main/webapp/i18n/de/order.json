@@ -1,0 +1,27 @@
+{
+  "gymPlusApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Order erstellen",
+        "createOrEditLabel": "Order erstellen oder bearbeiten",
+        "notFound": "Keine Orders gefunden"
+      },
+      "created": "Order erstellt mit ID {{ param }}",
+      "updated": "Order aktualisiert mit ID {{ param }}",
+      "deleted": "Order gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Order {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "Id",
+      "name": "Name",
+      "orderDate": "Order Date",
+      "id": "Id",
+      "payment": "Payment"
+    }
+  }
+}

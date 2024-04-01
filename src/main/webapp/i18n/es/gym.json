@@ -1,0 +1,30 @@
+{
+  "gymPlusApp": {
+    "gym": {
+      "home": {
+        "title": "Gyms",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Gym",
+        "createOrEditLabel": "Crear o editar Gym",
+        "notFound": "Ningún Gyms encontrado"
+      },
+      "created": "Un nuevo Gym ha sido creado con el identificador {{ param }}",
+      "updated": "Un Gym ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Gym ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Gym {{ id }}?"
+      },
+      "detail": {
+        "title": "Gym"
+      },
+      "id": "Id",
+      "name": "Name",
+      "streetAddress": "Street Address",
+      "postalCode": "Postal Code",
+      "city": "City",
+      "stateProvince": "State Province",
+      "phoneNumber": "Phone Number",
+      "id": "Id"
+    }
+  }
+}

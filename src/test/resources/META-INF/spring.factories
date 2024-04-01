@@ -1,0 +1,2 @@
+org.springframework.test.context.ContextCustomizerFactory = com.smz.gymplus.\
+    config.SqlTestContainersSpringContextCustomizerFactory

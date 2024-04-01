@@ -1,0 +1,130 @@
+entity Authority {
+    name String
+}
+
+entity Gym {
+    id Long
+    name String
+    streetAddress String
+    postalCode String
+    city String
+    stateProvince String
+    phoneNumber Integer
+}
+
+entity PeriodicSubscription {
+    id Long
+    name String
+    description String
+    status Boolean
+    paymentStatus Boolean
+}
+
+entity Payment {
+
+    status Boolean
+    paymentDate Instant
+}
+
+entity Plan {
+    id Long
+    name String
+    price Float
+}
+
+entity Period {
+    id Long
+    monthOccurrence Integer
+    dayOccurrence Integer
+}
+
+entity Invoice {
+    id Long
+    invoiceDate Instant
+    payAmount Float
+}
+
+entity Order {
+    id Long
+    name String
+    orderDate Instant
+}
+
+entity OrderUnit {
+    id Long
+    quantity Integer
+    unitPrice Float
+}
+
+entity Product {
+    id Long
+    name String
+    description String
+    price Float
+    availableStockQuantity Long
+}
+
+entity ProductHistory {
+    id Long
+    name String
+    description String
+    price Float
+    availableStockQuantity Long
+    validFrom Instant
+    validTo Instant
+}
+
+entity Category {
+    name String
+}
+
+// Define relationships
+relationship OneToMany {
+    Product { id } to ProductHistory { product }
+}
+
+relationship ManyToMany {
+    Authority { name } to User with builtInEntity
+}
+
+relationship ManyToMany {
+    Gym { id } to User with builtInEntity
+}
+
+relationship ManyToMany {
+    PeriodicSubscription { id } to User with builtInEntity
+}
+
+relationship OneToMany {
+    Plan { id } to PeriodicSubscription { plans }
+}
+
+relationship OneToMany {
+    Period { id } to Plan { periods }
+}
+
+relationship OneToMany {
+    Invoice { id } to PeriodicSubscription { invoices }
+}
+
+relationship ManyToOne {
+    Payment { id } to Invoice { payment }
+}
+
+
+relationship ManyToOne {
+    Payment { id } to Order { payment }
+}
+
+
+relationship OneToMany {
+    Order { id } to OrderUnit { orderUnits }
+}
+
+relationship OneToMany {
+    Product { id } to OrderUnit { products }
+}
+
+relationship OneToMany {
+    Category { name } to Product { category }
+}

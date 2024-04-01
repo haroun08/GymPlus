@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240330172350"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Plan",
+  "relationships": [
+    {
+      "otherEntityName": "periodicSubscription",
+      "otherEntityRelationshipName": "plans",
+      "relationshipName": "id",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "period",
+      "otherEntityRelationshipName": "id",
+      "relationshipName": "periods",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

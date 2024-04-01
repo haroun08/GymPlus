@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity PeriodicSubscription.
+    -->
+    <changeSet id="20240330172349-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="periodic_subscription_id"
+                                 baseTableName="rel_periodic_subscription__id"
+                                 constraintName="fk_rel_periodic_subscription__id__periodic_subscription_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="periodic_subscription"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="id_id"
+                                 baseTableName="rel_periodic_subscription__id"
+                                 constraintName="fk_rel_periodic_subscription__id__id_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="plans_id"
+                                 baseTableName="periodic_subscription"
+                                 constraintName="fk_periodic_subscription__plans_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="plan"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="invoices_id"
+                                 baseTableName="periodic_subscription"
+                                 constraintName="fk_periodic_subscription__invoices_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="invoice"
+                                 />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,119 @@
+/* Custom styles for LoginModal */
+#login-page {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#login-title {
+  text-align: center;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-link {
+  text-align: center;
+}
+
+.login-link a {
+  color: #007bff;
+}
+
+.login-link a:hover {
+  color: #0056b3;
+}
+.login-modal {
+  max-width: 400px; /* Adjust the maximum width of the modal */
+  margin: 0 auto; /* Center the modal horizontally */
+}
+
+.login-modal .modal-header {
+  background-color: #007bff; /* Set background color for the header */
+  color: #fff; /* Set text color for the header */
+  border-bottom: none; /* Remove border from the bottom */
+}
+
+.login-modal .modal-header h5 {
+  margin: 0; /* Remove margin from the heading */
+}
+
+.login-modal .modal-body {
+  padding: 20px; /* Add padding to the body */
+}
+
+.login-modal .form-control {
+  width: 100%; /* Set width to 100% for form controls */
+  padding: 10px; /* Add padding to form controls */
+  margin-bottom: 15px; /* Add margin bottom to form controls */
+  border: 1px solid #ccc; /* Add border to form controls */
+  border-radius: 4px; /* Add border radius to form controls */
+}
+
+.login-modal .form-check-label {
+  margin-right: 5px; /* Add margin right to form check label */
+}
+
+.login-modal .btn-primary {
+  width: 100%; /* Set width to 100% for primary button */
+  padding: 10px; /* Add padding to primary button */
+  margin-top: 10px; /* Add margin top to primary button */
+  border: none; /* Remove border from primary button */
+  border-radius: 4px; /* Add border radius to primary button */
+  background-color: #007bff; /* Set background color for primary button */
+  color: #fff; /* Set text color for primary button */
+  cursor: pointer; /* Set cursor style for primary button */
+}
+
+.login-modal .btn-primary:hover {
+  background-color: #0056b3; /* Change background color on hover for primary button */
+}
+
+.login-modal .modal-footer {
+  border-top: none; /* Remove border from top of footer */
+  padding: 10px 20px; /* Add padding to footer */
+}
+
+.login-modal .alert {
+  margin-bottom: 20px; /* Add margin bottom to alerts */
+}
+
+.login-modal .login-link {
+  text-align: center; /* Center align login links */
+}
+
+.login-modal .login-link a {
+  color: #007bff; /* Set color for login links */
+}
+
+.login-modal .login-link a:hover {
+  color: #0056b3; /* Change color on hover for login links */
+}

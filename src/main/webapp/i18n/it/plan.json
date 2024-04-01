@@ -1,0 +1,27 @@
+{
+  "gymPlusApp": {
+    "plan": {
+      "home": {
+        "title": "Plans",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Plan",
+        "createOrEditLabel": "Genera o modifica un Plan",
+        "notFound": "No Plans found"
+      },
+      "created": "&Egrave; stato generato un nuovo Plan con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Plan identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Plan con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Plan {{ id }}?"
+      },
+      "detail": {
+        "title": "Plan"
+      },
+      "id": "Id",
+      "name": "Name",
+      "price": "Price",
+      "id": "Id",
+      "periods": "Periods"
+    }
+  }
+}

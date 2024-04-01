@@ -1,0 +1,26 @@
+{
+  "gymPlusApp": {
+    "period": {
+      "home": {
+        "title": "Periods",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Period",
+        "createOrEditLabel": "Genera o modifica un Period",
+        "notFound": "No Periods found"
+      },
+      "created": "&Egrave; stato generato un nuovo Period con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Period identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Period con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Period {{ id }}?"
+      },
+      "detail": {
+        "title": "Period"
+      },
+      "id": "Id",
+      "monthOccurrence": "Month Occurrence",
+      "dayOccurrence": "Day Occurrence",
+      "id": "Id"
+    }
+  }
+}

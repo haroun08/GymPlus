@@ -1,0 +1,61 @@
+/* user.scss */
+
+.user-management-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.user-management-table {
+  margin-top: 20px;
+}
+
+.user-management-table th,
+.user-management-table td {
+  vertical-align: middle;
+}
+
+.user-management-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+/* user.scss */
+
+.user-management-container {
+  padding: 20px;
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.user-management-table {
+  margin-top: 20px;
+}
+
+.user-management-table th,
+.user-management-table td {
+  vertical-align: middle;
+}
+
+.user-management-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-management-header {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e0e0e0; /* Set a background color for the header */
+  border-radius: 5px;
+}
+
+.user-management-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.user-management-header .btn {
+  margin-right: 10px;
+}
+
+
+/* Add more styling properties as needed */
