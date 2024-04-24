@@ -1,33 +1,98 @@
-.image-container {
+// home.scss
+
+// General styles
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0; // Adjust as needed
+}
+
+// Header styles
+.header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+}
+
+// Image container styles
+.image-container {
   position: relative;
+  margin-bottom: 20px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .gymplus-image {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1;
-  }
+// Styled image styles
+.styled-image {
+  max-width: 100%;
+}
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/content/images/gymplus.jpg");
-    background-blend-mode: overlay, normal;
-    background-position: center;
-    background-size: cover;
-    filter: brightness(50%);
-    transition: filter 0.5s ease;
-    z-index: 0;
-  }
+// Info overlay styles
+.info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
-  &:hover:before {
-    filter: brightness(70%);
-  }
+.image-container:hover .info-overlay {
+  opacity: 1;
+}
+
+// Description styles
+.description {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+// CTA styles
+.cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cta .info-overlay {
+  padding: 10px; // Adjust as needed
+}
+
+.cta .info-overlay p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cta .btn {
+  margin-top: 20px;
+}
+
+// Links styles
+.links {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.links .link-container {
+  margin-bottom: 30px;
+}
+
+.links .link-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.links .link-container .btn {
+  margin-right: 10px;
 }
